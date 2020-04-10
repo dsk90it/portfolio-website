@@ -1,0 +1,92 @@
+/* DEFAULTS & RESETS */
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900');
+
+*, *:before, *:after{ box-sizing: border-box; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+}
+body{ margin: 0; padding: 0; font-family: 'Roboto', sans-serif; font-weight: 400; font-size: 16px; line-height: 1.1;
+}
+section{ display: block;
+}
+.fw{ width: 100%;
+}
+p{ margin-top: 0; margin-bottom: 10px;
+}
+img{ display: inline-block; max-width: 100%; height: auto;
+}
+a{ text-decoration: none; outline: 0 none;
+}
+
+/* COMMON CONTAINERS */
+.content-container, .left-column, .right-column{ float: left; width: 100%;
+}
+
+.left-column{ padding: 50px 30px;
+}
+.right-column{ padding: 30px;
+}
+
+.left-column{ color: #ffffff; background: url('../images/bg.png') no-repeat center center; background-size: cover; min-height: 250px;
+}
+.left-column .flex-container{ display: flex; flex-wrap: wrap; align-items: center; justify-content: center; min-height: 210px; flex-direction: row;
+}
+.left-column .name-row{ text-align: center; font-weight: 500; font-size: 18px;
+}
+.left-column .img-row{ text-align: center; margin-top: 20px;
+}
+.left-column .img-row a{ color: #ffffff;
+}
+.left-column .img-row .avatar{ width: 100px; height: 100px; border-radius: 100%; object-fit: cover;
+}
+.left-column .img-row p{ font-size: 16px; line-height: 22px; margin-top: 20px;
+}
+.left-column .img-row p a{ color: #F8E71C;
+}
+.left-column .img-row p a:hover{ text-decoration: underline;
+}
+.left-column .email-icon{ display: inline-block; margin-top: 20px;
+}
+.left-column .email-icon a{ display: inline-block; width: 60px; height: 60px; border-radius: 100%; border: 1px solid #ffffff; padding: 7px 10px;
+}
+.left-column .email-icon img{ width: 25px; height: 25px;
+}
+.left-column .email-icon span{ display: block; font-size: 12px; line-height: 16px;
+}
+
+.right-column .roles{ margin-bottom: 45px;
+}
+.right-column .roles h3{ margin: 0; font-size: 18px; font-weight: 500;
+}
+.right-column .roles h3 i{ font-style: normal; display: inline-block; vertical-align: middle; padding: 0 5px;
+}
+.right-column .roles h3 span{ font-weight: 400; font-size: 14px; display: inline-block; vertical-align: middle; color: #5F199D; text-transform: uppercase;
+}
+.right-column .roles p{ color: #636363; font-weight: 300; line-height: 22px; font-size: 14px; margin: 18px 0 20px;
+}
+.right-column .roles .download-link{ color: #5F199D; font-size: 14px; font-weight: 700; text-transform: uppercase;
+}
+
+/* MEDIA QUERIES */
+@media (min-width: 992px){
+  .content-container{ padding-left: 50%;
+  }
+
+  .left-column, .right-column{ padding: 40px;
+  }
+
+  .left-column{ position: fixed; left: 0; top: 0; bottom: 0; width: 50%; height: auto;
+  }
+  .left-column .flex-container{ height: 100%;
+  }
+  .left-column .name-row{ text-align: right; align-self: flex-start;
+  }
+  .left-column .img-row{ margin-top: 0;
+  }
+  .left-column .img-row .avatar{ width: 175px; height: 175px;
+  }
+  .left-column .img-row p, .left-column .email-icon{ margin-top: 40px;
+  }
+  .left-column .email-icon a{ width: 80px; height: 80px; padding: 15px 10px;
+  }
+  .left-column .email-icon img{ width: 30px; height: 30px;
+  }
+}
