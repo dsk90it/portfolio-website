@@ -1,8 +1,10 @@
-## Responsive Portfolio Website
-A single page portfolio responsive website without using any css framework.
+## Portfolio Website
+A single page responsive portfolio website without using any css framework.
 
 ## Tech Stack
-HTML & CSS 3
+- HTML
+- CSS
+- No CSS framework
 
 ## Demo
 https://portfolio-layout.netlify.com/
